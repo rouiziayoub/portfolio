@@ -1,13 +1,84 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@500&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #01be96;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 8px 2%;
+  background: var(--bg-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+.logo {
+  letter-spacing: 1px;
+  margin-top: 10px;
+  font-size: 2.2rem;
+  color: var(--text-color);
+  font-weight: 600;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.logo:hover {
+  color: #fff;
+}
+.nav-link {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  margin-left: 4rem;
+  transition: 0.3s;
+}
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #01be96;
+}
+
+.menu .nav-link:hover {
+  color: var(--main-color);
+}
+.menu {
+  margin-left: 135%;
+}
+.nav-link:active {
+  color: var(--main-color);
+}
+
+.nav-link::after {
+  color: var(--main-color);
+}
+
+span {
+  color: var(--main-color);
+}
+
+.container {
+  margin-top: 200px;
+}
+.btn-contact {
+  margin-left: 205px;
 }
