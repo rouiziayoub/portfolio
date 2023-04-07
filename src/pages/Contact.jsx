@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 
@@ -38,6 +39,7 @@ function Contact() {
       toast.error("un des input est vide remplir tout les champs.");
     }
   }
+  
   return (
     <>
       <div className="container">
@@ -90,16 +92,6 @@ function Contact() {
                 <Toaster />
               </div>
             </form>
-          </div>
-          <div className="col-md-6 ">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3324.324794084718!2d-7.696353685537175!3d33.570915350389754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda7d33ee4eb778d%3A0x8d8470ec4438619!2sHay%20hassani!5e0!3m2!1sfr!2sma!4v1680618600466!5m2!1sfr!2sma"
-              width="600"
-              height="450"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
           </div>
         </div>
       </div>

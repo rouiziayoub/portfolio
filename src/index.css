@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mulish&family=Poppins:wght@500&display=swap");
+
 * {
   margin: 0;
   text-decoration: none;
@@ -81,4 +82,39 @@ span {
 }
 .btn-contact {
   margin-left: 205px;
+}
+.header {
+  margin-top: 100px;
+}
+.header img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* .col {
+  height: 00px;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 300px;
+} */
+.image2 {
+  height: 300px;
+}
+.btn-link {
+  display: inline-block;
+  padding: 5px 30px;
+  text-decoration: none;
+  background: var(--main-color);
+  border-radius: 4rem;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 20px;
+  color: var(--second-bg-color);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+.btn-link:hover {
+  box-shadow: none;
+  border: 1px var(--main-color) solid;
 }

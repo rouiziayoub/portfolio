@@ -11,11 +11,11 @@ function App() {
     <>
       <Header />
 
-      <Routes maxLoadingTime={(500)}>
-        <Route path="/" element={<Home />} loading />
-        <Route path="/Contact" element={<Contact />} loading />
-        <Route path="/About" element={<About />} loading />
-        <Route path="/Projects" element={<Projects />} loading /></Routes>
+      <Routes >
+        <Route path="/" element={<Home />}  />
+        <Route path="/Contact" element={<Contact />}  />
+        <Route path="/About" element={<About />}  />
+        <Route path="/Projects" element={<Projects />}  /></Routes>
     </>
   );
 }

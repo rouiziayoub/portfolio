@@ -1,54 +1,42 @@
 import React from "react";
+
 import "./Projects.css";
-import Carousel from "react-bootstrap/Carousel";
-import project from "../images/"
+import Info from "./Info";
+import jondo from "../images/portrait.jpg"
+import FLORETTE from "../images/FLORETTE.png"
+import sandbox from "../images/i2.png"
+import Bootcamp from "../images/Capture.PNG"
+
+
 
 function Projects() {
-  return (
-    <>
-      <div className="container projects">
-        <Carousel>
-          <Carousel.Item>
-            <img
-              className="d-danger w-100 "
-              src={project}
-              alt="First slide"
-            />
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
-              alt="Second slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            </Carousel.Caption>
-          </Carousel.Item>
-          <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
-            />
-
-            <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
-        </Carousel>
+  const users=[
+    {
+        id:1,img:Bootcamp,name:"Bootcamp",link:"https://rouiziayoub.github.io/TP3/"
+    },
+    {
+        id:2,img:jondo,name:"jondo",link:"https://rouiziayoub.github.io/TP/"
+    },
+    {
+        id:3,img:FLORETTE,name:"FLORETTE",link:"https://rouiziayoub.github.io/CAFE-FLORETTE/"
+    },
+    {
+        id:4,img:sandbox,name:"sandbox",link:"https://rouiziayoub.github.io/sandbox/"
+    },
+]
+return (
+<>
+    <div className="container">
+      <div className="row">
+      { users.map((user)=>(
+              <Info key={user.id} img={user.img} name={user.name} link={user.link}/>
+            ))
+              
+            }
       </div>
-    </>
-  );
+    </div>
+</>
+)
 }
 
 export default Projects;
