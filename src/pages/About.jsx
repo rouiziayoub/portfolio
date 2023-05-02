@@ -13,7 +13,7 @@ function About() {
               <img src={img} alt="" className="w-50 " />
             </div>
           </div>
-          
+
           <div className="col-md-6 " id="about">
             <div className="about-content me-4">
               <h2 className="heading">
@@ -21,12 +21,10 @@ function About() {
               </h2>
               <h3>Frontend Developer</h3>
               <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste,
-                provident. Corrupti, fugiat delectus aliquam nesciunt vitae
-                magnam eveniet asperiores quaerat illo possimus reiciendis. Et
-                ea, quam dolor labore, qui dolores, minus quae laborum sit
-                corporis consequatur deleniti unde nobis excepturi explicabo ab
-                vel iste eum adipisci!
+                Je m’appelle Ayoub rouizi, j’ai 25 ans je un Diplôme Technicien
+                Spécialisé en gestion des entreprises, ma passion au domaine
+                informatique ma pousser de changer la carrière vers le domaine
+                informatique, et devient un Full-Stack développeur
               </p>
               <Link to="/" className="btn">
                 Read More
